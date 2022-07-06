@@ -3,7 +3,7 @@
   "description": "Webcomponent shopify-app-blocks following open-wc recommendations",
   "license": "MIT",
   "author": "shopify-app-blocks",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
