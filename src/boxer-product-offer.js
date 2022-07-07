@@ -267,8 +267,7 @@ export class BoxerProductOffer extends LitElement {
   }
 
   fetchBoxerProduct() {
-    fetch('https://62c3c793abea8c085a63139e.mockapi.io/quotes', {
-      // fetch('/apps/goboxer/cost-svc/v1/my-store-quotes', {
+    fetch('/apps/goboxer/cost-svc/v1/my-store-quotes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -290,10 +289,9 @@ export class BoxerProductOffer extends LitElement {
             Promise.allSettled(
               data.quote[0].costs.map(async quote => {
                 const response = await fetch(
-                  // `${window.Shopify.routes.root}products/goBoxer-${String(
-                  //   quote.cost
-                  // ).replace('.', '-')}.js`,
-                  'https://62c3c793abea8c085a63139e.mockapi.io/products/1',
+                  `${window.Shopify.routes.root}products/goBoxer-${String(
+                    quote.cost
+                  ).replace('.', '-')}.js`,
                   {
                     method: 'GET',
                     headers: {
