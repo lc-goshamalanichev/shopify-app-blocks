@@ -1,14 +1,12 @@
 {
-  "name": "shopify-app-blocks",
-  "description": "Webcomponent shopify-app-blocks following open-wc recommendations",
-  "license": "MIT",
-  "author": "shopify-app-blocks",
+  "author": "Boxer",
+  "name": "@goboxer/shopify-assets-app-web",
+  "license": "UNLICENSED",
   "version": "0.1.0",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
     "analyze": "cem analyze --litelement",
-    "start": "web-dev-server",
     "build": "rimraf dist && rollup -c rollup.config.js",
     "lint": "eslint --ext .js,.html . --ignore-path .gitignore && prettier \"**/*.js\" --check --ignore-path .gitignore",
     "format": "eslint --ext .js,.html . --fix --ignore-path .gitignore && prettier \"**/*.js\" --write --ignore-path .gitignore",
@@ -55,8 +53,5 @@
       "eslint --fix",
       "prettier --write"
     ]
-  },
-  "msw": {
-    "workerDirectory": "dist"
   }
 }
